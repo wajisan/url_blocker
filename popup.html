@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>URL Blocker Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>URLs Bloquées :</h3>
+    <input type="text" id="urlInput" placeholder="Exemple : *://www.youtube.com/shorts/*">
+    <button id="addUrl">Ajouter</button>
+    <ul id="urlList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

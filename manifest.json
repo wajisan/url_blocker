@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "URL Blocker",
+  "version": "1.1",
+  "description": "Block URLs, or beginning of URL (e.g., domain.com or domain.com/page3/*)",
+  "permissions": ["webNavigation", "tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "author": "Wajicorp"
+}
